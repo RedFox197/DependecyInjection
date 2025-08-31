@@ -4,12 +4,11 @@ import com.github.redfox197.di.annotation.Autowired;
 import com.github.redfox197.di.annotation.Bean;
 
 @Bean
-public class Albero {
+public class TestInject {
     @Autowired
-    private Fiore fiore;
+    private Test testBean;
 
     public void test() {
-        System.out.println("Albero");
-        fiore.test();
+        testBean.test();
     }
 }
