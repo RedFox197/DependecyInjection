@@ -11,7 +11,7 @@ public class Main {
                 Main.class.getPackageName()
         );
 
-        Albero albero = diContainer.getInstanceOfBean(Albero.class);
-        albero.test();
+        TestInject testInject = diContainer.getInstanceOfBean(TestInject.class);
+        testInject.test();
     }
 }
